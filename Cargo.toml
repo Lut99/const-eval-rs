@@ -1,0 +1,13 @@
+[package]
+name = "const-eval"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lut99"]
+repository = "https://github.com/Lut99/const-eval-rs"
+description = "A library for Rust macros to do compile-time evaluation of (parts of) Rust expressions."
+
+
+[dependencies]
+proc-macro2 = { version = "1.0", default-features = false }
+quote = { version = "1.0", default-features = false }
+syn = { version = "2.0", default-features = false, features = ["extra-traits", "full", "parsing", "printing"] }
